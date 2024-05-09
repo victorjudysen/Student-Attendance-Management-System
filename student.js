@@ -25,7 +25,8 @@ function submitFun1(e) {
 
 function displayFun(studentDataArr) {
 
-    // var count = 1;
+    document.querySelector("#tbody").innerHTML = "";
+
     studentDataArr.forEach(function (item, index) {
     
         var tr = document.createElement("tr");
@@ -64,6 +65,7 @@ function displayFun(studentDataArr) {
             studentDataArr.splice(index, 1);
             localStorage.setItem("studentData", JSON.stringify(studentDataArr));
             tr.remove();
+            displayFun(studentDataArr);
         });
 
         td6.classList.add("td6");
