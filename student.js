@@ -20,13 +20,13 @@ function submitFun1(e) {
     document.querySelector("#form1").reset();
     alert("Student Added Successfully");
 
-    displayFun(studentDataArr)
+    displayFun(studentDataArr);
 }
 
 function displayFun(studentDataArr) {
 
     var count = 1;
-    studentDataArr.map(function (item) {
+    studentDataArr.map(function (item, index) {
     
         var tr = document.createElement("tr");
 
@@ -60,14 +60,14 @@ function displayFun(studentDataArr) {
 
         var btn3 = document.createElement("button");
         btn3.innerHTML = "Delete";
-        btn3.addEventListener("click", function () 
-        {
-            var tableRow = td6. 
-            tableRow.remove();
+        btn3.addEventListener("click", function () {
+            studentDataArr.splice(index, 1);
+            localStorage.setItem("studentData", JSON.stringify(studentDataArr));
+            tr.remove();
         });
 
         td6.classList.add("td6");
-        td6.append(btn1, btn2, btn3);
+        td6.append(btn1, btn2);
 
         tr.append(td1, td2, td3, td4, td6);
 
