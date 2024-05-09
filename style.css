@@ -96,13 +96,13 @@
     width: 100%;
     background-color: green;
     padding: 15px;
+    display: flex;
 }
 
 #form1 {
     margin: auto;
     width: 80%;
 }
-
 
 #form1 input {
     padding: 10px ;
