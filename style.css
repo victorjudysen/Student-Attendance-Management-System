@@ -25,6 +25,7 @@
 
 
 /* -------------- login form -------------- */
+
 .login {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,6 +55,18 @@
     border-radius: 20px;
 }
 
+.login_head{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 38px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 #form {
     display: flex;
     flex-direction: column;
@@ -76,19 +89,6 @@
     color: black;
     border-radius: 5px;
 }
-
-.login_head{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 38px;
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-}
-
 
   /* -------------- student form -------------- */
 
