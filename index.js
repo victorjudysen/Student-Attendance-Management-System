@@ -16,6 +16,3 @@ function submitFun(elme) {
     }
 
 }
-
-
-

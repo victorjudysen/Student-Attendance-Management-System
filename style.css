@@ -24,7 +24,7 @@
 }
 
 
-/* --------------login form ----  */
+/* -------------- login form -------------- */
 .login {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,7 +90,7 @@
 }
 
 
-  /* --------------student form -------------- */
+  /* -------------- student form -------------- */
 
 table, td, th {
     border: 1px solid #ddd;
