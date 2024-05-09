@@ -60,8 +60,9 @@ function displayFun(studentDataArr) {
         });
 
         var btn3 = document.createElement("button");
-        btn3.innerHTML = "Delete";
-        btn3.addEventListener("click", function () {
+        btn3.innerHTML = "Remove";
+        btn3.addEventListener("click", function () 
+        {
             studentDataArr.splice(index, 1);
             localStorage.setItem("studentData", JSON.stringify(studentDataArr));
             tr.remove();
