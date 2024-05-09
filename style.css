@@ -96,12 +96,13 @@
     width: 100%;
     background-color: green;
     padding: 15px;
-    display: flex;
 }
 
 #form1 {
     margin: auto;
     width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
 #form1 input {
