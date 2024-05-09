@@ -6,13 +6,13 @@ function submitFun1(e) {
     document.querySelector("#tbody").innerHTML = "";
     e.preventDefault();
     var name = document.querySelector("#name").value;
-    var register = document.querySelector("#regNo").value;
+    var regNo = document.querySelector("#regNo").value;
     var degree = document.querySelector("#degree").value;
     // var rollNo = document.querySelector("#rollNo").value;
 
     var studentObj = {
         name: name,
-        register: regNo,
+        regNo: regNo,
         degree: degree,
         // rollNo: rollNo
     }
@@ -39,20 +39,17 @@ function displayFun(studentDataArr) {
         td2.innerHTML = item.name;
 
         var td3 = document.createElement("td");
-        td3.innerHTML = item.register;
+        td3.innerHTML = item.regNo;
 
         var td4 = document.createElement("td");
         td4.innerHTML = item.degree;
 
-        // var td5 = document.createElement("td");
-        // td5.innerHTML = item.rollNo;
-
         var td6 = document.createElement("td");
-
+        
         var btn1 = document.createElement("button");
         btn1.innerHTML = "P";
         btn1.addEventListener("click", function () {
-            td6.innerHTML = "<button >Present</button>";
+            td6.innerHTML = "<button>Present</button>";
         });
 
         var btn2 = document.createElement("button");
