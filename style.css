@@ -60,11 +60,11 @@
     margin: auto;
     margin-top: 20px;
     font-size: 38px;
-    background-color: green;
+    background-color: rgb(21, 129, 21);
     color: white;
     text-align: center;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #form {
