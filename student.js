@@ -1,6 +1,7 @@
 document = document.getElementById("form1").addEventListener("submit", submitFun1);
 
 var studentDataArr =JSON.parse(localStorage.getItem("studentData"))|| [];
+
 function submitFun1(e) {
     document.querySelector("#tbody").innerHTML = "";
     e.preventDefault();
