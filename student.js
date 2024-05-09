@@ -25,13 +25,13 @@ function submitFun1(e) {
 
 function displayFun(studentDataArr) {
 
-    var count = 1;
-    studentDataArr.map(function (item, index) {
+    // var count = 1;
+    studentDataArr.forEach(function (item, index) {
     
         var tr = document.createElement("tr");
 
         var td1 = document.createElement("td");
-        td1.innerHTML = count++
+        td1.innerHTML = index + 1;
 
         var td2 = document.createElement("td");
         td2.innerHTML = item.name;
@@ -67,7 +67,7 @@ function displayFun(studentDataArr) {
         });
 
         td6.classList.add("td6");
-        td6.append(btn1, btn2);
+        td6.append(btn1, btn2, btn3);
 
         tr.append(td1, td2, td3, td4, td6);
 
