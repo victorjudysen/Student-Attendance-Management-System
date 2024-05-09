@@ -103,6 +103,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 #form1 input {
