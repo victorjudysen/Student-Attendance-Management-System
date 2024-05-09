@@ -8,13 +8,11 @@ function submitFun1(e) {
     var name = document.querySelector("#name").value;
     var regNo = document.querySelector("#regNo").value;
     var degree = document.querySelector("#degree").value;
-    // var rollNo = document.querySelector("#rollNo").value;
 
     var studentObj = {
         name: name,
         regNo: regNo,
         degree: degree,
-        // rollNo: rollNo
     }
 
     studentDataArr.push(studentObj);
@@ -45,28 +43,37 @@ function displayFun(studentDataArr) {
         td4.innerHTML = item.degree;
 
         var td6 = document.createElement("td");
-        
+
         var btn1 = document.createElement("button");
         btn1.innerHTML = "P";
-        btn1.addEventListener("click", function () {
+        btn1.addEventListener("click", function () 
+        {
             td6.innerHTML = "<button>Present</button>";
         });
 
         var btn2 = document.createElement("button");
         btn2.innerHTML = "A";
-        btn2.addEventListener("click", function () {
+        btn2.addEventListener("click", function () 
+        {
             td6.innerHTML = "<button id='absent'>Absent</button>";
         });
 
+        var btn3 = document.createElement("button");
+        btn3.innerHTML = "Delete";
+        btn3.addEventListener("click", function () 
+        {
+            var tableRow = td6. 
+            tableRow.remove();
+        });
+
         td6.classList.add("td6");
-        td6.append(btn1, btn2);
+        td6.append(btn1, btn2, btn3);
 
         tr.append(td1, td2, td3, td4, td6);
 
         document.querySelector("#tbody").append(tr);
 
     });
-
 
 }
 displayFun(studentDataArr);
